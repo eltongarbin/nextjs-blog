@@ -7,6 +7,13 @@ import Header from '../components/Header';
 
 const Index = ({ posts = [] }) => (
   <div>
+    <style jsx>{`
+      .post-link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+      }
+    `}</style>
     <Header />
     {posts.map((p) => (
       <Card key={p.id}>
@@ -14,7 +21,7 @@ const Index = ({ posts = [] }) => (
         <CardActions>
           <Button variant="contained" color="primary" fullWidth>
             <Link href={`/post?id=${p.id}`} as={`/blog/${p.id}`}>
-              <a>Click to view posts!</a>
+              <a className="post-link">Click to view posts!</a>
             </Link>
           </Button>
         </CardActions>
