@@ -1,7 +1,7 @@
-import 'isomorphic-fetch';
 import React from 'react';
 import { Button, CardActions, CardHeader, Card } from '@material-ui/core';
 import Link from 'next/link';
+import 'isomorphic-fetch';
 
 import Header from '../components/Header';
 
