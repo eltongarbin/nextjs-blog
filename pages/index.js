@@ -1,7 +1,21 @@
+import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+
 const Index = ({ title = 'Hello from next.js' }) => (
-  <div>
-    <h2>{title}</h2>
-  </div>
+  <AppBar position="static">
+    <Toolbar>
+      <IconButton color="inherit" aria-label="Menu">
+        <MenuIcon />
+      </IconButton>
+      <Typography variant="h6" color="inherit">
+        {title}
+      </Typography>
+    </Toolbar>
+  </AppBar>
 );
 
 export default Index;
